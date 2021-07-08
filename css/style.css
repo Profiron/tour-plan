@@ -462,17 +462,20 @@ template {
     padding-top: 30px;
     padding-bottom: 30px;
   }
-  .navbar-top__search {
+  .navbar__search {
     margin-left: auto;
-    max-width: 340px;
   }
-  .navbar-top-menu {
+  .navbar-menu {
     padding-top: 22px;
     padding-bottom: 22px;
   }
-  .navbar-top-menu__link {
+  .navbar-menu__link {
     font-size: 12px;
     line-height: 15px;
+  }
+
+  .search__input {
+    max-width: 340px;
   }
 }
 @media (max-width: 768px) {
@@ -492,6 +495,7 @@ template {
     flex-direction: column;
     width: 16px;
     height: 11px;
+    padding: 0;
     border: none;
     background: #ffffff;
     cursor: pointer;
