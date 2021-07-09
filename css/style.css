@@ -497,10 +497,6 @@ template {
   line-height: 15px;
 }
 
-.stars {
-  width: 100%;
-}
-
 .offer {
   font-size: 10px;
   line-height: 13px;
@@ -590,7 +586,7 @@ template {
   }
 
   .stars {
-    flex-basis: 10%;
+    flex-basis: auto;
   }
 
   .hotel-name {
