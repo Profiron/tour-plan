@@ -7,6 +7,8 @@ const swiper = new Swiper('.swiper-container', {
       nextEl: '.slider-button--next',
       prevEl: '.slider-button--prev',
    },
-   // Эффект перелистывания слайдера
-   /* effect: "cube", */
+   keyboard: {
+      enabled: true,
+      onlyInViewport:true,
+   }
 });
