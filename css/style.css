@@ -599,9 +599,15 @@ template {
   right: 18px;
   background-image: url(../img/hotel/arrow-next.svg);
 }
+.slider-button--next:hover {
+  background-image: url(../img/hotel/arrow-next-hover.svg);
+}
 .slider-button--prev {
   left: 18px;
   background-image: url(../img/hotel/arrow-prev.svg);
+}
+.slider-button--prev:hover {
+  background-image: url(../img/hotel/arrow-prev-hover.svg);
 }
 
 .booking {
