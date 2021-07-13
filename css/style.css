@@ -478,6 +478,9 @@ template {
   text-decoration: none;
   color: inherit;
 }
+.breadcrumb-list__link:hover {
+  border-bottom: 1px solid #0A223D;
+}
 
 .hotel {
   padding-top: 23px;
