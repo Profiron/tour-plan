@@ -397,6 +397,11 @@ template {
   width: 177px;
 }
 
+.logo:hover {
+  margin-bottom: 2px;
+  border-bottom: 1px solid #0A223D;
+}
+
 .search {
   display: flex;
   position: relative;
@@ -426,6 +431,9 @@ template {
   background-color: #EC1F46;
   cursor: pointer;
 }
+.search__button:hover {
+  background-color: #f15757;
+}
 
 .user {
   display: flex;
@@ -443,6 +451,9 @@ template {
   font-size: 14px;
   line-height: 18px;
   color: #333333;
+}
+.user__name:hover {
+  border-bottom: 1px solid #0A223D;
 }
 
 .breadcrumb-list {
