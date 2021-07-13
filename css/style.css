@@ -392,6 +392,9 @@ template {
   font-size: 14px;
   line-height: 18px;
 }
+.navbar-menu__link:hover {
+  border-bottom: 1px solid #ffffff;
+}
 
 .logo {
   width: 177px;
