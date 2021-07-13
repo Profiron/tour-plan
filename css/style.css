@@ -692,6 +692,9 @@ template {
   color: #ffffff;
   cursor: pointer;
 }
+.booking__button:hover {
+  background-color: #f15757;
+}
 
 .map {
   width: 347px;
