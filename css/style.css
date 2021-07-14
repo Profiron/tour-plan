@@ -709,15 +709,12 @@ template {
   background-color: #000;
 }
 
-.newsletter {
+.newsletter-parallax {
   position: relative;
   padding: 98px 0 87px 0;
-  background-image: url(../img/newsletter/newsletter-bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  height: 100%;
 }
-.newsletter:before {
+.newsletter-parallax:before {
   content: "";
   position: absolute;
   top: 0;
@@ -1076,6 +1073,9 @@ template {
     width: 99px;
   }
 
+  .hotel {
+    padding-bottom: 40px;
+  }
   .hotel-slider {
     height: 250px;
   }
@@ -1083,9 +1083,6 @@ template {
     margin-bottom: 20px;
   }
 
-  .newsletter {
-    padding: 76px 0 83px 0;
-  }
   .newsletter__title {
     margin-bottom: 37px;
     font-weight: 300;
@@ -1105,6 +1102,7 @@ template {
   .reviews__title {
     width: 245px;
     margin: 40px auto 42px;
+    margin-top: 0;
     text-align: center;
     font-style: normal;
     font-weight: bold;
