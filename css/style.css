@@ -356,6 +356,49 @@ template {
   display: none;
 }
 
+@media (min-width: 992px) {
+  .logo:hover {
+    margin-bottom: 2px;
+    border-bottom: 1px solid #0A223D;
+  }
+
+  .navbar-menu__link:hover {
+    border-bottom: 1px solid #ffffff;
+  }
+
+  .search__button:hover {
+    background-color: #f15757;
+  }
+
+  .user__name:hover {
+    border-bottom: 1px solid #0A223D;
+  }
+
+  .breadcrumb-list__link:hover {
+    border-bottom: 1px solid #0A223D;
+  }
+
+  .hotel-slider__button--next:hover {
+    background-image: url(../img/hotel/arrow-next-hover.svg);
+  }
+  .hotel-slider__button--prev:hover {
+    background-image: url(../img/hotel/arrow-prev-hover.svg);
+  }
+  .hotel__button:hover {
+    background-color: #f15757;
+  }
+
+  .subscribe__button:hover {
+    background-color: #f15757;
+  }
+
+  .reviews-slider__button--next:hover {
+    background-image: url(../img/reviews/arrow-next-hover.svg);
+  }
+  .reviews-slider__button--prev:hover {
+    background-image: url(../img/reviews/arrow-prev-hover.svg);
+  }
+}
 .navbar {
   background-color: #fff;
 }
@@ -392,17 +435,9 @@ template {
   font-size: 14px;
   line-height: 18px;
 }
-.navbar-menu__link:hover {
-  border-bottom: 1px solid #ffffff;
-}
 
 .logo {
   width: 177px;
-}
-
-.logo:hover {
-  margin-bottom: 2px;
-  border-bottom: 1px solid #0A223D;
 }
 
 .search {
@@ -434,9 +469,6 @@ template {
   background-color: #EC1F46;
   cursor: pointer;
 }
-.search__button:hover {
-  background-color: #f15757;
-}
 
 .user {
   display: flex;
@@ -454,9 +486,6 @@ template {
   font-size: 14px;
   line-height: 18px;
   color: #333333;
-}
-.user__name:hover {
-  border-bottom: 1px solid #0A223D;
 }
 
 .breadcrumb-list {
@@ -477,9 +506,6 @@ template {
 .breadcrumb-list__link {
   text-decoration: none;
   color: inherit;
-}
-.breadcrumb-list__link:hover {
-  border-bottom: 1px solid #0A223D;
 }
 
 .hotel {
@@ -568,15 +594,9 @@ template {
   right: 18px;
   background-image: url(../img/hotel/arrow-next.svg);
 }
-.hotel-slider__button--next:hover {
-  background-image: url(../img/hotel/arrow-next-hover.svg);
-}
 .hotel-slider__button--prev {
   left: 18px;
   background-image: url(../img/hotel/arrow-prev.svg);
-}
-.hotel-slider__button--prev:hover {
-  background-image: url(../img/hotel/arrow-prev-hover.svg);
 }
 
 .stars {
@@ -697,9 +717,6 @@ template {
   color: #ffffff;
   cursor: pointer;
 }
-.booking__button:hover {
-  background-color: #f15757;
-}
 
 .map {
   width: 347px;
@@ -778,9 +795,6 @@ template {
   background-color: #EC1F46;
   color: #ffffff;
 }
-.subscribe__button:hover {
-  background-color: #f15757;
-}
 
 .reviews {
   padding: 40px 0 70px 0;
@@ -846,12 +860,6 @@ template {
 .reviews-slider__button--next {
   background-image: url(../img/reviews/arrow-next.svg);
   right: 0;
-}
-.reviews-slider__button--prev:hover {
-  background-image: url(../img/reviews/arrow-prev-hover.svg);
-}
-.reviews-slider__button--next:hover {
-  background-image: url(../img/reviews/arrow-next-hover.svg);
 }
 .reviews-slider__profile {
   display: flex;
