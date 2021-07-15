@@ -398,6 +398,10 @@ template {
   .reviews-slider__button--prev:hover {
     background-image: url(../img/reviews/arrow-prev-hover.svg);
   }
+
+  .card__button:hover {
+    background-color: #f15757;
+  }
 }
 .navbar {
   background-color: #fff;
