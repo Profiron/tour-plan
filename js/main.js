@@ -46,10 +46,7 @@ const reviewsSlider = new Swiper('.reviews-slider', {
       enabled: true,
       onlyInViewport: true,
    },
-   //Автопрокрутка слайдов
-   autoplay: {
-      delay: 10000,
-      // Отключить после ручного переключения
-      disableOnInteraction: false
-   }
+   //Авто высота слайдера
+   autoHeight: true,
+   spaceBetween: 20,
 })
