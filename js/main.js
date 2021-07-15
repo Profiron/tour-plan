@@ -19,7 +19,7 @@ const hotelSlider = new Swiper('.hotel-slider', {
 
    //Автопрокрутка слайдов
    autoplay: {
-      delay: 3000,
+      delay: 5000,
       // Отключить после ручного переключения
       disableOnInteraction: false
    }
@@ -48,7 +48,7 @@ const reviewsSlider = new Swiper('.reviews-slider', {
    },
    //Автопрокрутка слайдов
    autoplay: {
-      delay: 3000,
+      delay: 10000,
       // Отключить после ручного переключения
       disableOnInteraction: false
    }
