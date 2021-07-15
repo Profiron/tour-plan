@@ -384,7 +384,8 @@ template {
   .hotel-slider__button--prev:hover {
     background-image: url(../img/hotel/arrow-prev-hover.svg);
   }
-  .hotel__button:hover {
+
+  .booking__button:hover {
     background-color: #f15757;
   }
 
