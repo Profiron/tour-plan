@@ -847,7 +847,6 @@ template {
 }
 .mare__text {
   margin-bottom: 11px;
-  grid-row: 3/3;
   margin-left: 32px;
   font-style: normal;
   font-weight: normal;
@@ -886,11 +885,9 @@ template {
   grid-template-columns: repeat(3, 1fr);
 }
 .pack-image {
-  grid-row: 1/2;
   margin-bottom: 30px;
 }
 .pack-title {
-  grid-row: 2/3;
   margin-left: 32px;
   font-style: normal;
   font-weight: bold;
@@ -899,7 +896,6 @@ template {
   margin-bottom: 23px;
 }
 .pack-room {
-  grid-row: 3/4;
   margin-left: 32px;
   margin-bottom: 24px;
 }
@@ -911,7 +907,6 @@ template {
   margin-bottom: 11px;
 }
 .pack-price {
-  grid-row: 4/5;
   margin-left: 32px;
 }
 .pack-price__old {
