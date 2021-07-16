@@ -385,11 +385,7 @@ template {
     background-image: url(../img/hotel/arrow-prev-hover.svg);
   }
 
-  .booking__button:hover {
-    background-color: #f15757;
-  }
-
-  .subscribe__button:hover {
+  .button:hover {
     background-color: #f15757;
   }
 
