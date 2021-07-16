@@ -758,6 +758,7 @@ template {
 .haven-image {
   grid-row: 2/6;
   width: 366px;
+  height: 500px;
 }
 .haven-stars {
   grid-row: 2/3;
