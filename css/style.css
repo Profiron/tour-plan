@@ -728,7 +728,8 @@ template {
 }
 
 .packages {
-  padding: 40px 0;
+  padding-top: 40px;
+  padding-bottom: 70px;
 }
 .packages-title {
   font-weight: bold;
