@@ -8,85 +8,88 @@
     text-transform: uppercase
     margin-top: 0
     margin-bottom: 65px
-  &-wrapper
-    display: grid
-    grid-template-columns: 1fr 1fr
-    grid-gap: 30px
-.haven
+.wrapper
   display: grid
-  grid-template-columns: repeat(2,1fr)
-  max-height: 1030px
-  background-color: $dark
-  color: $light
-  width: 730px
-  height: 500px
-  border-radius: 8px
+  grid-template-columns: 1fr 1fr 1fr
+  grid-template-rows: 500px 500px
+  grid-gap: 30px
+  &-haven
+    display: grid
+    grid-column: 1/3
+    grid-template-columns: 1fr 1fr
+    background-color: $dark
+    color: $light
+    border-radius: 8px
   &-image
-    grid-row: 2/6
-    width: 366px
-    height: 500px
+    min-height: 500px
+    grid-row: 1/6
   &-stars
-    grid-row: 2/3
-    margin-top: 46px
+    grid-column: 2/3
+    grid-row: 1
+    align-self: end
     margin-left: 44px
-    margin-bottom: 0
-    height: 36px
   &-title
-    grid-row: 2/3
+    grid-row: 2
+    grid-column: 2/3
+    margin-top: 0
+    margin-left: 44px
     font-style: normal
     font-weight: bold
     font-size: 18px
     line-height: 23px
   &-text
-    grid-row: 3/4
+    grid-row: 3
+    grid-column: 2/3
     margin-left: 44px
-    padding-right: 24px
+    margin-right: 21px
     font-style: normal
     font-weight: normal
     font-size: 14px
     line-height: 160.6%
   &__text
-    margin-bottom: 11px
-  &-room
-    grid-row: 4/5
+    margin-top: 11px
     font-style: normal
     font-weight: normal
     font-size: 12px
     line-height: 15px
+  &__icon
+    margin-right: 14px
+  &-room
+    grid-row: 4
+    grid-column: 2/3
     margin-left: 44px
   &-price
-    grid-row: 5/6
+    grid-row: 5
+    grid-column: 2/3
     margin-left: 44px
     &__old
       display: block
-  &__button
-    margin-left: 70px
-    padding: 10px 27px
-    background-color: $primary
-    color: $light
-    border: none
-    border-radius: 4px
-    cursor: pointer
-  &__icon
-    margin-right: 14px
-.price
-  &-old
-    text-decoration: line-through
-    margin-bottom: 5px
-  &-new
-    font-style: normal
-    font-weight: bold
-    font-size: 24px
-    line-height: 30px
+      margin-bottom: 5px
+      text-decoration: line-through
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 18px
+    &__new
+      font-style: normal
+      font-weight: bold
+      font-size: 24px
+      line-height: 30px
+    &__button
+      margin-left: 70px
+      padding: 10px 27px
+      background-color: $primary
+      color: $light
+      border: none
+      border-radius: 4px
+      cursor: pointer
 .mare
-  display: grid
   background-color: $dark
   color: $light
   border-radius: 8px
-  &-image
-    grid-row: 1/1
   &-title
-    grid-row: 2/3
+    margin-top: 30px
+    margin-bottom: 23px
     margin-left: 32px
     font-style: normal
     font-weight: bold
@@ -99,39 +102,45 @@
     font-weight: normal
     font-size: 12px
     line-height: 15px
+  &__icon
+    margin-right: 14px
   &-price
     margin-left: 32px
     &__old
       display: block
-  &__button
-    margin-left: 70px
-    padding: 10px 27px
-    background-color: $primary
-    color: $light
-    border: none
-    border-radius: 4px
-    cursor: pointer
-  &__icon
-    margin-right: 14px
+      margin-bottom: 5px
+      text-decoration: line-through
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 18px
+    &__new
+      font-style: normal
+      font-weight: bold
+      font-size: 24px
+      line-height: 30px
+    &__button
+      margin-left: 70px
+      padding: 10px 27px
+      background-color: $primary
+      color: $light
+      border: none
+      border-radius: 4px
+      cursor: pointer
 .pack
   background-color: $dark
   color: $light
   border-radius: 8px
-  margin-top: 30px
   width: 350px
-  &-wrapper
-    display: grid
-    grid-gap: 30px
-    grid-template-columns: repeat(3,1fr)
   &-image
-    margin-bottom: 30px
+    margin-bottom: 20px
   &-title
     margin-left: 32px
     font-style: normal
     font-weight: bold
     font-size: 18px
     line-height: 23px
-    margin-bottom: 23px
+    margin-bottom: 20px
   &-room
     margin-left: 32px
     margin-bottom: 24px
@@ -141,18 +150,28 @@
     font-size: 12px
     line-height: 15px
     margin-bottom: 11px
+  &__icon
+    margin-right: 14px
   &-price
     margin-left: 32px
     &__old
       display: block
-  &__button
-    margin-left: 70px
-    padding: 10px 27px
-    background-color: $primary
-    color: $light
-    border: none
-    border-radius: 4px
-    margin-bottom: 30px
-    cursor: pointer
-  &__icon
-    margin-right: 14px
+      margin-bottom: 5px
+      text-decoration: line-through
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 18px
+    &__new
+      font-style: normal
+      font-weight: bold
+      font-size: 24px
+      line-height: 30px
+    &__button
+      margin-left: 70px
+      padding: 10px 27px
+      background-color: $primary
+      color: $light
+      border: none
+      border-radius: 4px
+      cursor: pointer
