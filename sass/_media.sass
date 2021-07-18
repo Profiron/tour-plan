@@ -74,7 +74,13 @@
   .card
     width: 340px
     height: 255px
-
+  .wrapper
+    grid-gap: 10px
+    max-width: 700px
+  .mare
+    width: 345px
+  .pack
+    width: 345px
 @media (max-width: 778px)
   .container
     max-width: 576px
@@ -230,7 +236,6 @@
       line-height: 23px
   .card
     width: 100%
-
   .packages
     padding-top: 0
     padding-bottom: 35px
@@ -239,10 +244,107 @@
       margin-bottom: 35px
   .wrapper
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr
+    grid-template-columns: 450px
+    grid-gap: 15px
+    margin: 0 auto
+    width: 450px
+    &-label
+      padding: 4px 9px
+      font-style: normal
+      font-weight: 600
+      font-size: 8px
+      line-height: 10px
+    &-haven
+      width: 450px
+    &-image
+      grid-row: 1/3
+      grid-column: 1/3
+      height: 250px
+    &__img
+      width: 450px
+      height: 250px
+      border-radius: 8px 8px 0 0
+      padding-bottom: 25px
+    &-stars
+      grid-row: 2/3
+      grid-column: 1/3
+      align-self: start
+      margin-left: 50px
+    &-title
+      grid-row: 2
+      grid-column: 1/3
+      align-self: end
+      margin-left: 50px
+    &-text
+      display: none
+      grid-row: 4/5
+      grid-column: 1/3
+      font-size: 11px
+      width: 280px
+      margin-left: 120px
+    &-room
+      grid-row: 3/3
+      grid-column: 1/3
+      align-self: end
+      margin-left: 120px
+    &-price
+      grid-row: 5/6
+      grid-column: 1/3
+      margin-left: 50px
+      &__button
+        margin-left: 150px
+  .mare
+    grid-row: 2
+    width: 450px
+    &-image
+      width: 450px
+      height: 250px
+    &-img
+      width: 450px
+      height: 250px
+    &-title
+      margin-top: 25px
+      margin-left: 50px
+    &__text
+      margin-left: 120px
+
+    &-price
+      margin-left: 50px
+      &__button
+        margin-left: 150px
+        margin-bottom: 20px
+  .pack
+    width: 450px
+    &-image
+      width: 450px
+      height: 250px
+    &-img
+      width: 450px
+      height: 250px
+    &-title
+      margin-top: 25px
+      margin-left: 50px
+    &-room
+      margin-left: 0
+    &__text
+      margin-left: 120px
+    &-price
+      margin-left: 50px
+      &__button
+        margin-left: 150px
+  .palace
+    grid-row: 3
+  .place
+    grid-row: 4
+  .star
+    grid-row: 5
+
+@media (max-width: 501px)
+  .wrapper
+    grid-template-columns: 298px
     grid-gap: 15px
     margin: 0 auto
     width: 298px
-    height: 2440px
     &-haven
       width: 298px
     &-image
@@ -252,15 +354,18 @@
     &__img
       width: 298px
       height: 198px
+      padding: 0
       border-radius: 8px 8px 0 0
     &-stars
       grid-row: 2/3
       grid-column: 1/3
       align-self: start
+      margin-left: 20px
     &-title
       grid-row: 2
       grid-column: 1/3
       align-self: end
+      margin-left: 20px
     &-text
       display: none
       grid-row: 4/5
@@ -281,6 +386,8 @@
   .mare
     grid-row: 2
     width: 298px
+    &-img
+      width: 298px
     &-title
       margin-top: 25px
       margin-left: 20px
@@ -291,7 +398,9 @@
       &__button
         margin-left: 70px
   .pack
-    height: 470px
+    width: 298px
+    &-img
+      width: 298px
     &-title
       margin-top: 25px
       margin-left: 20px
