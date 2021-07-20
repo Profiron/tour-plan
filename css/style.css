@@ -1367,6 +1367,38 @@ template {
   color: #BDBDBD;
 }
 
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 94px;
+}
+.bottom-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 696px;
+}
+.bottom__ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.bottom__item {
+  list-style: none;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+}
+.bottom__item:not(:last-child) {
+  margin-right: 15px;
+}
+.bottom__link {
+  text-decoration: none;
+  color: inherit;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
