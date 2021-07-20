@@ -357,17 +357,12 @@ template {
 }
 
 @media (min-width: 992px) {
-  .logo:hover {
-    margin-bottom: 2px;
-    border-bottom: 1px solid #0A223D;
-  }
-
   .navbar-menu__link:hover {
     border-bottom: 1px solid #ffffff;
   }
 
   .search__button:hover {
-    background-color: #f15757;
+    background-color: #9b0223;
   }
 
   .user__name:hover {
@@ -386,7 +381,7 @@ template {
   }
 
   .button:hover {
-    background-color: #f15757;
+    background-color: #9b0223;
   }
 
   .reviews-slider__button--next:hover {
@@ -397,7 +392,24 @@ template {
   }
 
   .card__button:hover {
-    background-color: #f15757;
+    background-color: #9b0223;
+  }
+
+  .footer__link:hover {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+  .footer__social-icon:hover {
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+  }
+  .footer__details-link:hover {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+
+  .bottom__link:hover {
+    text-decoration: underline;
   }
 }
 .navbar {
@@ -1262,6 +1274,10 @@ template {
 .footer__categories {
   grid-row: 1/4;
 }
+.footer__details-link {
+  text-decoration: none;
+  color: inherit;
+}
 .footer__social-links {
   display: flex;
   align-items: center;
@@ -1272,6 +1288,10 @@ template {
   display: flex;
   grid-row: 2/4;
   grid-column: span 2;
+}
+.footer__social-icon {
+  width: 20px;
+  height: 20px;
 }
 .footer__contact-details {
   grid-column: span 2;
@@ -1335,6 +1355,11 @@ template {
   height: 50px;
   margin-bottom: 15px;
   flex-basis: 48%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  outline: none;
 }
 .footer__message {
   background-color: #fff;
@@ -1345,6 +1370,12 @@ template {
   margin-bottom: 23px;
   width: 539px;
   height: 123px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  outline: none;
+  resize: none;
 }
 .footer__button {
   min-width: 160px;
@@ -1364,7 +1395,7 @@ template {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
-  color: #BDBDBD;
+  color: #E0E0E0;
 }
 
 .bottom {
