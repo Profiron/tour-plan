@@ -2127,10 +2127,6 @@ template {
     width: 298px;
   }
 
-  .footer-container {
-    margin: 0 auto;
-    width: 289px;
-  }
   .footer-wrapper {
     grid-template-columns: 298px;
     width: 298px;
