@@ -552,10 +552,10 @@
 
     <!--! footer  -->
     <footer class="footer">
-      <div class="container">
+      <div class="footer-container container">
         <div class="footer-wrapper">
           <a href="#" class="footer__logo">
-            <img src="img/footer/vert-logo.svg" alt="Logo: Best Tour Plan" />
+            <img src="img/footer/vert-logo.svg" alt="Logo: Best Tour Plan" class="footer__logo-img" />
           </a>
           <div class="footer__list footer__categories">
             <h3 class="footer__title">All Categories</h3>
@@ -587,7 +587,7 @@
             </ul>
           </div>
           <!-- /.footer__list -->
-          <div class="footer___list footer__aditiona">
+          <div class="footer___list footer__additional">
             <h3 class="footer__title">Aditional Information</h3>
             <ul class="footer__ul">
               <li class="footer__item">
@@ -689,8 +689,10 @@
               <input type="text" class="input footer__input" placeholder="Your Full Name*" />
               <input type="text" class="input footer__input" placeholder="Phone Number*" />
               <textarea cols="30" rows="10" class="footer__message" placeholder="Message"></textarea>
-              <button class="button footer__button">Send</button>
-              <span class="footer__info">* Required Fields</span>
+              <div class="footer__info-wrapper">
+                <button class="button footer__button">Send</button>
+                <span class="footer__info">* Required Fields</span>
+              </div>
             </form>
           </div>
           <!-- /.footer__contact-form -->

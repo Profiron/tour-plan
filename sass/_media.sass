@@ -26,6 +26,9 @@
     width: 350px
   .palace
     grid-row: 2/3
+  .footer
+    &__input
+      flex-basis: 100%
 @media (max-width: 992px)
   .container,
   .newsletter-wrapper
@@ -81,6 +84,34 @@
     width: 345px
   .pack
     width: 345px
+  .footer
+    &-wrapper
+      grid-template-columns: repeat(6,1fr)
+      grid-row-gap: 40px
+    &__input
+      flex-basis: 49%
+    &__logo
+      grid-row: 1/2
+      grid-column: span 2
+    &__social
+      &-network
+        grid-row: 1/2
+        grid-column: span 4
+        align-self: center
+    &__categories
+      grid-row: 2/3
+      grid-column: span 2
+    &__legal
+      grid-column: span 2
+    &__additional
+      grid-column: span 2
+    &__contact
+      &-details
+        grid-column: span 5
+        grid-row: 3
+      &-form
+        grid-column: span 5
+        grid-row: 4
 @media (max-width: 778px)
   .container
     max-width: 576px
@@ -201,6 +232,9 @@
       &__button
         padding: 9px 13px
         margin-left: 3px
+  .footer
+    &__input
+      flex-basis: 100%
 
 @media (max-width: 625px)
   .logo
@@ -337,11 +371,24 @@
     grid-row: 4
   .star
     grid-row: 5
+  .footer
+    &__contact
+      &-form
+        width: 450px
+
+  .bottom
+    display: flex
+    width: 450px
+    &-wrapper
+      display: flex
+      flex-direction: column
+      max-width: 450px
 
 @media (max-width: 501px)
+
   .wrapper
     grid-template-columns: 298px
-    grid-gap: 15px
+    grid-gap: 10px
     margin: 0 auto
     width: 298px
     &-haven
@@ -416,3 +463,51 @@
   .star
     grid-row: 5
     width: 298px
+  .footer
+    &-container
+      margin: 0 auto
+      width: 289px
+    &-wrapper
+      grid-template-columns: 298px
+      width: 298px
+    &__logo
+      grid-row: 1
+      grid-column: 1
+      width: 104px
+    &__social
+      &-network
+        grid-row: 2
+        grid-column: 1
+    &__additional
+      grid-row: 3
+      grid-column: 1
+    &__categories
+      grid-row: 4
+      grid-column: 1
+    &__legal
+      grid-row: 5
+      grid-column: 1
+    &__contact
+      &-details
+        grid-row: 6
+        grid-column: 1
+      &-form
+        width: 289px
+        grid-row: 7
+        grid-column: 1
+    &__info
+      grid-row: 5
+      grid-column: 1
+      margin-bottom: 15px
+      &-wrapper
+        display: grid
+  .button
+      grid-row: 9
+      grid-column: 1
+  .bottom
+    display: flex
+    width: 289px
+    &-wrapper
+      display: flex
+      flex-direction: column
+      max-width: 289px
