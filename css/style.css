@@ -1286,6 +1286,7 @@ template {
 }
 .footer__social-network {
   display: flex;
+  align-content: start;
   grid-row: 2/4;
   grid-column: span 2;
 }
