@@ -50,3 +50,11 @@ const reviewsSlider = new Swiper('.reviews-slider', {
    autoHeight: true,
    spaceBetween: 20,
 })
+
+//Меню в мобильной версии
+var menuButton = document.querySelector(".menu-button")
+menuButton.addEventListener('click', function () {
+   console.log('Клик по меню')
+   document.querySelector(".navbar-bottom").classList.toggle('navbar-bottom--visible')
+
+})
