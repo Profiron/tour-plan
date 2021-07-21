@@ -2184,4 +2184,8 @@ template {
     flex-direction: column;
     max-width: 289px;
   }
+
+  .search__input {
+    width: 293px;
+  }
 }
