@@ -31,7 +31,7 @@ try {
     // Настройки вашей почты
     $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
     $mail->Username   = 'liron7489@gmail.com'; // Логин на почте
-    $mail->Password   = 'adrinalin05061989'; // Пароль на почте
+    $mail->Password   = 'adrik05061989'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
     $mail->setFrom('liron7489@gmail.com', 'Сообщение с сайта'); // Адрес самой почты и имя отправителя
