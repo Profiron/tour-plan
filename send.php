@@ -1,4 +1,5 @@
 <?php
+'test';
 // Файлы phpmailer
 require 'phpmailer/PHPMailer.php';
 require 'phpmailer/SMTP.php';
@@ -55,4 +56,4 @@ try {
 
 // Отображение результата
 header('location: sendsuccess.html');
-/* echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]); */
+ //echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]); 
