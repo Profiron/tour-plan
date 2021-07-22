@@ -34,7 +34,7 @@ try {
     $mail->Password   = 'adrinalin05061989'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('support@li-ron.ru', 'Сообщение с сайта'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('liron7489@gmail.com', 'Сообщение с сайта'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
     $mail->addAddress('support@li-ron.ru');  
@@ -56,4 +56,3 @@ try {
 // Отображение результата
 header('location: sendsuccess.html');
 /* echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]); */
-
