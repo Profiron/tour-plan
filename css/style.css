@@ -1443,6 +1443,26 @@ template {
   color: inherit;
 }
 
+.send {
+  padding: 25px;
+}
+.send__sub {
+  margin: 0;
+}
+.send-block {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+.send__button {
+  background-color: #EC1F46;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  padding: 10px 10px;
+  cursor: pointer;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -1819,6 +1839,14 @@ template {
   .footer__input {
     flex-basis: 100%;
   }
+
+  .send-success {
+    margin-bottom: 20px;
+  }
+  .send-block {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 @media (max-width: 625px) {
   .logo {
@@ -2130,8 +2158,8 @@ template {
   }
 
   .footer-wrapper {
-    grid-template-columns: 298px;
-    width: 298px;
+    grid-template-columns: 1fr;
+    width: 100%;
   }
   .footer__logo {
     grid-row: 1;

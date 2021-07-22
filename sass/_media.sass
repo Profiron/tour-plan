@@ -274,6 +274,12 @@
   .footer
     &__input
       flex-basis: 100%
+  .send
+    &-success
+      margin-bottom: 20px
+    &-block
+      flex-direction: column
+      align-items: flex-start
 
 @media (max-width: 625px)
   .logo
@@ -502,8 +508,8 @@
     width: 298px
   .footer
     &-wrapper
-      grid-template-columns: 298px
-      width: 298px
+      grid-template-columns: 1fr
+      width: 100%
     &__logo
       grid-row: 1
       grid-column: 1
