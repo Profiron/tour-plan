@@ -112,6 +112,13 @@
       &-form
         grid-column: span 5
         grid-row: 4
+  .modal
+    &__dialog
+      padding: 15px 40px
+    &__info
+      margin-top: 10px
+      &-wrapper
+        flex-direction: column
 @media (max-width: 778px)
   .container
     max-width: 576px
@@ -280,7 +287,9 @@
     &-block
       flex-direction: column
       align-items: flex-start
-
+  .modal
+    &__dialog
+      padding: 20px 40px
 @media (max-width: 625px)
   .logo
     width: 99px
