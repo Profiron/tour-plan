@@ -5,23 +5,51 @@ require 'phpmailer/PHPMailer.php';
 require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
 
-// Переменные, которые отправляет пользователь
-$name = $_POST['name'];
-$phone = $_POST['phone'];
-$message = $_POST['message'];
-$subs = $_POST['subs'];
 
 
-// Формирование самого письма
-$title = "Новое обращение Best Tour Plan";
-$body = "
-<h2>Новое обращение</h2>
-<b>Имя:</b> $name<br>
-<b>Телефон:</b> $phone<br><br>
-<b>Сообщение:</b><br>$message<br>
-<b>Новая подписка:</b><br>$subs
-";
 
+//Подписка newsletter
+if (trim(!empty($_POST['subs']))) {
+    $title = "Новая подписка";
+    $body.='<p><strong>Почта:</strong> '.$_POST['subs'].'</p>';
+    header('location: sendsubscribe.html');
+}
+
+
+// footer-message
+if (trim(!empty($_POST['name']))) {
+    $title = "Новое обращение Best Tour Plan";
+    $body.='<p><strong>Имя:</strong> '.$_POST['name'].'</p>';
+    $body.='<p><strong>Телефон:</strong> '.$_POST['phone'].'</p>';
+    $body.='<p><strong>Сообщение:</strong> '.$_POST['message'].'</p>';
+    //Вывод результата после отправки
+    header('location: sendmessage.html');
+}
+
+// modal-booking
+if (trim(!empty($_POST['booking-name']))) {
+    $title = "Бронирование номера Best Tour Plan";
+    $body.='<p><strong>Имя:</strong> '.$_POST['booking-name'].'</p>';
+    $body.='<p><strong>Телефон:</strong> '.$_POST['booking-phone'].'</p>';
+    $body.='<p><strong>Почта:</strong> '.$_POST['booking-email'].'</p>';
+    $body.='<p><strong>Сообщение:</strong> '.$_POST['booking-message'].'</p>';
+    //Вывод результата после отправки
+    header('location: sendbooking.html');
+}
+
+// modal-feedback
+if (trim(!empty($_POST['feedback-name']))) {
+    $title = "Новый отзыв";
+    $body.='<p><strong>Имя:</strong> '.$_POST['feedback-name'].'</p>';
+    $body.='<p><strong>Телефон:</strong> '.$_POST['feedback-phone'].'</p>';
+    $body.='<p><strong>Почта:</strong> '.$_POST['feedback-email'].'</p>';
+    $body.='<p><strong>Сообщение:</strong> '.$_POST['feedback-message'].'</p>';
+    //Вывод результата после отправки
+    header('location: sendfeedback.html');
+}
+
+
+ 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
 try {
@@ -57,5 +85,5 @@ try {
 }
 
 // Отображение результата
-header('location: sendsuccess.html');
+
  //echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]); 

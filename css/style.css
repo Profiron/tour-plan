@@ -1456,6 +1456,9 @@ template {
   padding: 25px;
   margin-bottom: 50px;
 }
+.send-success {
+  max-width: 500px;
+}
 .send__sub {
   margin: 0;
 }
