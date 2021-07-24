@@ -1454,6 +1454,7 @@ template {
 
 .send {
   padding: 25px;
+  margin-bottom: 50px;
 }
 .send__sub {
   margin: 0;
