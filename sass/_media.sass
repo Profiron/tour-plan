@@ -289,7 +289,7 @@
       align-items: flex-start
   .modal
     &__dialog
-      padding: 20px 40px
+      padding: 15px 40px
 @media (max-width: 625px)
   .logo
     width: 99px
@@ -436,7 +436,10 @@
       display: flex
       flex-direction: column
       max-width: 450px
-
+  .modal
+    &__dialog
+      &--visible
+        width: 85%
 @media (max-width: 501px)
   .wrapper
     grid-template-columns: 298px
@@ -563,3 +566,32 @@
   .search
     &__input
       width: 293px
+@media (max-width: 360px)
+  .modal
+    &__dialog
+      padding: 15px 20px
+@media (max-height: 360px)
+  .modal
+    &__dialog
+      display: grid
+      grid-template-columns: 1fr
+      padding: 15px 15px
+    &__title
+      margin-top: 0
+    &__form
+      display: grid
+      grid-template-columns: 1fr 1fr
+      grid-gap: 5px
+    &__input
+      grid-column: 1
+      margin-bottom: 0
+    &__message
+      grid-column: 2
+      grid-row: 1/4
+      margin-bottom: 0
+    &__info
+      &-wrapper
+        grid-column: 1/3
+        flex-direction: row
+    &__button
+      width: 50%
