@@ -27,12 +27,12 @@ if (trim(!empty($_POST['name']))) {
 }
 
 // modal-booking
-if (trim(!empty($_POST['booking-name']))) {
+if (trim(!empty($_POST['bookingName']))) {
     $title = "Бронирование номера Best Tour Plan";
-    $body.='<p><strong>Имя:</strong> '.$_POST['booking-name'].'</p>';
-    $body.='<p><strong>Телефон:</strong> '.$_POST['booking-phone'].'</p>';
-    $body.='<p><strong>Почта:</strong> '.$_POST['booking-email'].'</p>';
-    $body.='<p><strong>Сообщение:</strong> '.$_POST['booking-message'].'</p>';
+    $body.='<p><strong>Имя:</strong> '.$_POST['bookingName'].'</p>';
+    $body.='<p><strong>Телефон:</strong> '.$_POST['bookingPhone'].'</p>';
+    $body.='<p><strong>Почта:</strong> '.$_POST['bookingEmail'].'</p>';
+    $body.='<p><strong>Сообщение:</strong> '.$_POST['bookingMessage'].'</p>';
     //Вывод результата после отправки
     header('location: sendbooking.html');
 }
@@ -40,10 +40,10 @@ if (trim(!empty($_POST['booking-name']))) {
 // modal-feedback
 if (trim(!empty($_POST['feedback-name']))) {
     $title = "Новый отзыв";
-    $body.='<p><strong>Имя:</strong> '.$_POST['feedback-name'].'</p>';
-    $body.='<p><strong>Телефон:</strong> '.$_POST['feedback-phone'].'</p>';
-    $body.='<p><strong>Почта:</strong> '.$_POST['feedback-email'].'</p>';
-    $body.='<p><strong>Сообщение:</strong> '.$_POST['feedback-message'].'</p>';
+    $body.='<p><strong>Имя:</strong> '.$_POST['feedbackName'].'</p>';
+    $body.='<p><strong>Телефон:</strong> '.$_POST['feedbackPhone'].'</p>';
+    $body.='<p><strong>Почта:</strong> '.$_POST['feedbackEmail'].'</p>';
+    $body.='<p><strong>Сообщение:</strong> '.$_POST['feedbackMessage'].'</p>';
     //Вывод результата после отправки
     header('location: sendfeedback.html');
 }
