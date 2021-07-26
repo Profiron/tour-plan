@@ -146,13 +146,17 @@ $(document).ready(function () {
         bookingMessage: {
           required: "Enter your message",
         },
+        //Подписка
+        subs: {
+          required: "Enter your message",
+        },
       },
     });
   })
 
-  
-  
-  
+
+
+
 
 
 
