@@ -113,12 +113,15 @@ $(document).ready(function () {
         //Телефон
         phone: {
           required: "Enter your phone",
+          minlength: "Enter the number in the format +7 (999) 999-99-99",
         },
         feedbackPhone: {
-          required: "Enter your phone",
+          required: "Enter the number in the format +7 (999) 999-99-99",
+          minlength: "Enter the number in the format +7 (999) 999-99-99",
         },
         bookingPhone: {
-          required: "Enter your phone",
+          required: "Enter the number in the format +7 (999) 999-99-99",
+          minlength: "Enter the number in the format +7 (999) 999-99-99",
         },
         //e-mail
         email: {

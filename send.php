@@ -38,7 +38,7 @@ if (trim(!empty($_POST['bookingName']))) {
 }
 
 // modal-feedback
-if (trim(!empty($_POST['feedback-name']))) {
+if (trim(!empty($_POST['feedbackName']))) {
     $title = "Новый отзыв";
     $body.='<p><strong>Имя:</strong> '.$_POST['feedbackName'].'</p>';
     $body.='<p><strong>Телефон:</strong> '.$_POST['feedbackPhone'].'</p>';
