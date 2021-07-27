@@ -113,15 +113,15 @@ $(document).ready(function () {
         //Телефон
         phone: {
           required: "Enter your phone",
-          minlength: "Enter the number in the format +7 (999) 999-99-99",
+          minlength: "Enter format +7 (999) 999-99-99",
         },
         feedbackPhone: {
-          required: "Enter the number in the format +7 (999) 999-99-99",
-          minlength: "Enter the number in the format +7 (999) 999-99-99",
+          required: "Enter your phone",
+          minlength: "Enter format +7 (999) 999-99-99",
         },
         bookingPhone: {
-          required: "Enter the number in the format +7 (999) 999-99-99",
-          minlength: "Enter the number in the format +7 (999) 999-99-99",
+          required: "Enter your phone",
+          minlength: "Enter format +7 (999) 999-99-99",
         },
         //e-mail
         email: {
@@ -146,18 +146,22 @@ $(document).ready(function () {
         bookingMessage: {
           required: "Enter your message",
         },
+      },
+    });
+
+    $(".subscribe").validate({
+      errorClass: "subscribe-invalid",
+      messages: {
         //Подписка
         subs: {
-          required: "Enter your message",
+          required: "Enter your e-mail address",
         },
       },
     });
   })
 
-
-
-
-
+  // Маска для телефона
+  $(".phone").mask("+7 (000) 000-00-00");
 
 
 
