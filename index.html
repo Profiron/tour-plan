@@ -147,7 +147,7 @@
         </div>
         <!-- /.hotel-info -->
         <div class="hotel-grid">
-          <div class="swiper-container hotel-slider hotel__slider" data-aos="fade-right" data-aos-delay="1500">
+          <div class="swiper-container hotel-slider hotel__slider">
             <div class="swiper-wrapper hotel-slider__wrapper">
               <div class="swiper-slide hotel-slider__slide">
                 <img class="hotel-slider__image" src="img/hotel/slide-1.jpg" alt="Slide: image-1" />
@@ -176,7 +176,7 @@
           <!-- /.swiper-container -->
 
           <div class="hotel-right">
-            <div class="booking" data-aos="fade-left" data-aos-delay="1000">
+            <div class="booking">
               <div class="booking__info">
                 <div class="booking__price">
                   <span class="booking__start">price starts as</span>
@@ -209,7 +209,7 @@
               </button>
             </div>
             <!-- /.booking -->
-            <div id="map" class="map" data-aos="fade-left" data-aos-delay="500"></div>
+            <div id="map" class="map"></div>
             <!-- /.map -->
           </div>
           <!-- /.hotel-right -->
@@ -224,7 +224,7 @@
       <div class="container">
         <h2 class="packages-title" data-aos="zoom-in-down" data-aos-duration="1000">Other Packages</h2>
         <div class="wrapper">
-          <div class="wrapper-haven" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
+          <div class="wrapper-haven"data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="200">
             <div class="wrapper-image">
               <img src="img/packages/img-1.jpg" alt="Картинка 1" class="wrapper__img" />
               <span class="wrapper-label">Flash Offer</span>
@@ -266,7 +266,7 @@
             </div>
           </div>
           <!-- /.wrapper-haven -->
-          <div class="mare" data-aos="fade-left" data-aos-offset="400" data-aos-easing="ease-in-sine">
+          <div class="mare" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="300">
             <div class="mare-image">
               <img src="img/packages/img-2.jpg" alt="Картинка 1" class="mare-img" />
               <span class="mare-label">Flash Offer</span>
@@ -294,7 +294,7 @@
             </div>
           </div>
           <!-- /.mare -->
-          <div class="pack palace" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="100">
+          <div class="pack palace" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="400">
             <div class="pack-image">
               <img src="img/packages/img-3.jpg" alt="Картинка 3" class="pack-img" />
               <span class="pack-label">Flash Offer</span>
@@ -322,7 +322,7 @@
             </div>
           </div>
           <!-- /.pack -->
-          <div class="pack place" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="200">
+          <div class="pack place" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="500">
             <div class="pack-image">
               <img src="img/packages/img-4.jpg" alt="Картинка 3" class="pack-img" />
               <span class="pack-label">Flash Offer</span>
@@ -349,7 +349,7 @@
             </div>
           </div>
           <!-- /.pack -->
-          <div class="pack star" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="300">
+          <div class="pack star" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="600">
             <div class="pack-image">
               <img src="img/packages/img-5.jpg" alt="Картинка 3" class="pack-img" />
               <span class="pack-label">Flash Offer</span>
@@ -385,20 +385,11 @@
     <!--! newsletter -->
     <section class="newsletter" data-parallax="scroll" data-image-src="img/newsletter/newsletter-bg.jpg">
       <div class="newsletter-wrapper">
-        <h2 class="newsletter-title"data-aos="fade-right"
-          data-aos-offset="400"
-          data-aos-easing="ease-in-sine">
+        <h2 class="newsletter-title" data-aos="fade-right">
           subscribe to our
           <span class="newsletter-title__strong">Newsletter</span>
         </h2>
-        <form
-          action="send.php"
-          method="POST"
-          class="subscribe newsletter__subscribe"
-          data-aos="fade-left"
-          data-aos-offset="600"
-          data-aos-easing="ease-in-sine"
-        >
+        <form action="send.php" method="POST" class="subscribe newsletter__subscribe">
           <input type="email" class="subscribe__input" name="subs" required placeholder="Your email address" />
           <button class="button subscribe__button" type="submit">Send</button>
         </form>
