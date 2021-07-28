@@ -783,7 +783,8 @@ template {
   height: 213px;
   border-radius: 10px;
   overflow: hidden;
-  background-color: #000;
+  background-image: url(../img/maps/maps.jpg);
+  background-position: center center;
 }
 
 .packages {
