@@ -492,6 +492,9 @@ template {
   font-size: 14px;
   line-height: 18px;
 }
+.navbar-menu__item {
+  font-weight: bold;
+}
 .navbar-menu__item--mobile--visible {
   display: none;
 }
@@ -765,6 +768,7 @@ template {
   line-height: 25px;
 }
 .booking__button {
+  font-family: "Nunito", sans-serif;
   width: 100%;
   min-height: 45px;
   font-style: normal;
@@ -899,6 +903,7 @@ template {
   line-height: 30px;
 }
 .wrapper-price__button {
+  font-family: "Nunito", sans-serif;
   margin-left: 70px;
   padding: 10px 27px;
   background-color: #EC1F46;
@@ -970,6 +975,7 @@ template {
   line-height: 30px;
 }
 .mare-price__button {
+  font-family: "Nunito", sans-serif;
   margin-left: 70px;
   padding: 10px 27px;
   background-color: #EC1F46;
@@ -1046,6 +1052,7 @@ template {
   line-height: 30px;
 }
 .pack-price__button {
+  font-family: "Nunito", sans-serif;
   margin-left: 70px;
   padding: 10px 27px;
   background-color: #EC1F46;
@@ -1300,6 +1307,7 @@ template {
   line-height: 20px;
 }
 .card__button {
+  font-family: "Nunito", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
