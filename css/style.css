@@ -1548,7 +1548,6 @@ template {
 }
 .bottom__ul {
   display: flex;
-  margin: 0;
   padding: 0;
 }
 .bottom__item {
@@ -1900,12 +1899,12 @@ template {
     padding-top: 26px;
     padding-left: 24px;
     padding-right: 22px;
-    max-width: 340px;
+    width: 340px;
     margin-right: 20px;
   }
 
   .map {
-    max-width: 340px;
+    width: 340px;
     max-height: 210px;
   }
 
@@ -1937,7 +1936,7 @@ template {
     height: 260px;
   }
   .newsletter-wrapper {
-    max-height: 65px;
+    height: 65px;
   }
   .newsletter-title {
     margin: 0;
@@ -2083,177 +2082,309 @@ template {
     padding: 15px 40px;
   }
 }
-@media (max-width: 760px) {
-  /**  .container
-  * max-width: 576px
-  * width: 92%
-  * body
-  * padding-top: 78px
-  * .navbar
-  * &--fixed
-  * position: fixed
-  * left: 0
-  * top: 0
-  * right: 0
-  * z-index: 99
-  * &__user, &__search
-  * &--mobile
-  * &--hidden
-  * display: none
-  * &--visible
-  * display: flex
-  * &__user
-  * flex-direction: column
-  * justify-content: center
-  * &-bottom
-  * display: none
-  * position: fixed
-  * left: 0
-  * right: 0
-  * bottom: 0
-  * top: 78px
-  * padding-top: 30px
-  * &--visible
-  * display: block
-  * overflow: scroll
-  * &-menu
-  * flex-direction: column
-  * &__item
-  * margin-bottom: 20px
-  * &--mobile
-  * &--visible
-  * display: block
-  * .user
-  * &__name
-  * &--light
-  * color: $light
-  * margin-left: 0
-  * margin-top: 10px
-  * .menu
-  * &-button
-  * display: flex
-  * align-items: center
-  * justify-content: space-between
-  * flex-direction: column
-  * width: 16px
-  * height: 11px
-  * padding: 0
-  * border: none
-  * background: #ffffff
-  * cursor: pointer
-  * &__line
-  * width: 16px
-  * height: 1px
-  * background-color: $text-color
-  * .stars
-  * flex-basis: auto
-  * .hotel
-  * &-name
-  * flex-basis: 100%
-  * &-wrapper
-  * justify-content: space-between
-  * &-info
-  * &__text
-  * width: 100%
-  * &__name
-  * margin-top: 4px
-  * margin-bottom: 0
-  * &__description
-  * margin: 5px
-  * &__rating
-  * display: none
-  * &__offer
-  * order: -1
-  * margin-left: 0
-  * .hotel
-  * &-right
-  * flex-direction: column
-  * min-height: 450px
-  * &-slider
-  * height: 350px
-  * .booking
-  * width: 100%
-  * .map
-  * width: 100%
-  * .newsletter
-  * &-wrapper
-  * flex-direction: column
-  * max-width: 576px
-  * width: 92%
-  * align-items: flex-start
-  * .reviews
-  * padding-bottom: 60px
-  * &-slider
-  * &__item
-  * padding: 0 30px 30px
-  * &:after, &:before
-  * display: none
-  * &__button
-  * top: 30px
-  * &--prev
-  * left: 50%
-  * margin-left: -100px
-  * transform: translate(-50%,0)
-  * &--next
-  * right: 50%
-  * margin-right: -100px
-  * transform: translate(50%,0)
-  * .activities
-  * padding-top: 40px
-  * padding-bottom: 60px
-  * .card
-  * width: 48%
-  * height: 255px
-  * .wrapper
-  * grid-template-columns: 1fr 1fr
-  * grid-gap: 20px
-  * width: 100%
-  * margin: 0
-  * &-stars
-  * margin-left: 20px
-  * &-title
-  * height: 20px
-  * margin-bottom: 0
-  * margin-left: 20px
-  * &-text
-  * margin-left: 20px
-  * &-price
-  * &__button
-  * margin-left: 10px
-  * padding: 9px 13px
-  * &__img
-  * border-radius: 8px
-  * .mare
-  * width: 278px
-  * &-title
-  * margin-top: 50px
-  * &-price
-  * &__button
-  * padding: 9px 13px
-  * margin-left: 3px
-  * .pack
-  * width: 278px
-  * &-title
-  * margin-top: 50px
-  * &-price
-  * &__button
-  * margin-left: 3px
-  * &-price
-  * &__button
-  * padding: 9px 13px
-  * margin-left: 3px
-  * .footer
-  * &__input
-  * flex-basis: 100%
-  * .send
-  * &-success
-  * margin-bottom: 20px
-  * &-block
-  * flex-direction: column
-  * align-items: flex-start
-  * .modal
-  * &__dialog
-  * padding: 15px 40px **/
+@media (max-width: 750px) {
+  .container {
+    max-width: 576px;
+    width: 92%;
+  }
+
+  body {
+    padding-top: 78px;
+  }
+
+  .navbar-top {
+    justify-content: space-between;
+  }
+  .navbar--fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 99;
+  }
+  .navbar__user--mobile--hidden, .navbar__search--mobile--hidden {
+    display: none;
+  }
+  .navbar__user--mobile--visible, .navbar__search--mobile--visible {
+    display: flex;
+  }
+  .navbar__user {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .navbar-bottom {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 78px;
+    padding-top: 30px;
+  }
+  .navbar-bottom--visible {
+    display: block;
+    overflow: scroll;
+  }
+  .navbar-menu {
+    flex-direction: column;
+  }
+  .navbar-menu__item {
+    margin-bottom: 20px;
+  }
+  .navbar-menu__item--mobile--visible {
+    display: block;
+  }
+
+  .user__name--light {
+    color: #ffffff;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .menu-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 16px;
+    height: 11px;
+    padding: 0;
+    border: none;
+    background: #ffffff;
+    cursor: pointer;
+  }
+  .menu-button__line {
+    width: 16px;
+    height: 1px;
+    background-color: #333333;
+  }
+
+  .stars {
+    flex-basis: auto;
+  }
+
+  .hotel-name {
+    flex-basis: 100%;
+  }
+  .hotel-wrapper {
+    justify-content: space-between;
+  }
+  .hotel-info__text {
+    width: 100%;
+  }
+  .hotel-info__name {
+    margin-top: 4px;
+    margin-bottom: 0;
+  }
+  .hotel-info__description {
+    margin: 5px;
+  }
+  .hotel-info__rating {
+    display: none;
+  }
+  .hotel-info__offer {
+    order: -1;
+    margin-left: 0;
+  }
+
+  .hotel-right {
+    flex-direction: column;
+    min-height: 450px;
+  }
+  .hotel-slider {
+    height: 350px;
+  }
+
+  .booking {
+    width: 100%;
+  }
+
+  .map {
+    width: 100%;
+  }
+
+  .newsletter {
+    height: 350px;
+  }
+  .newsletter-wrapper {
+    flex-direction: column;
+    max-width: 576px;
+    width: 92%;
+    align-items: flex-start;
+    height: 150px;
+  }
+
+  .reviews {
+    padding-bottom: 60px;
+  }
+  .reviews-slider__text {
+    width: 100%;
+  }
+  .reviews-slider__item {
+    padding: 0 30px 30px;
+  }
+  .reviews-slider__item:after, .reviews-slider__item:before {
+    display: none;
+  }
+  .reviews-slider__button {
+    top: 30px;
+  }
+  .reviews-slider__button--prev {
+    left: 50%;
+    margin-left: -100px;
+    transform: translate(-50%, 0);
+  }
+  .reviews-slider__button--next {
+    right: 50%;
+    margin-right: -100px;
+    transform: translate(50%, 0);
+  }
+
+  .activities {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+
+  .card {
+    width: 48%;
+    height: 255px;
+  }
+
+  .wrapper {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    width: 100%;
+    margin: 0;
+  }
+  .wrapper-stars {
+    margin-left: 20px;
+  }
+  .wrapper-title {
+    height: 20px;
+    margin-bottom: 0;
+    margin-left: 20px;
+  }
+  .wrapper-text {
+    margin-left: 20px;
+  }
+  .wrapper-price__button {
+    margin-left: 10px;
+    padding: 9px 13px;
+  }
+  .wrapper__img {
+    border-radius: 8px;
+  }
+
+  .mare {
+    width: 278px;
+  }
+  .mare-title {
+    margin-top: 50px;
+  }
+  .mare-price__button {
+    padding: 9px 13px;
+    margin-left: 3px;
+  }
+
+  .pack {
+    width: 278px;
+  }
+  .pack-title {
+    margin-top: 50px;
+  }
+  .pack-price__button {
+    margin-left: 3px;
+  }
+  .pack-price__button {
+    padding: 9px 13px;
+    margin-left: 3px;
+  }
+
+  .footer-wrapper {
+    grid-template-columns: 1fr;
+    width: 100%;
+    grid-gap: 20px;
+  }
+  .footer__title {
+    margin: 0;
+    margin-bottom: 0;
+  }
+  .footer__title--inline {
+    margin-right: 50px;
+  }
+  .footer__logo {
+    grid-row: 1;
+    grid-column: 1;
+    width: 104px;
+  }
+  .footer__social-network {
+    grid-row: 2;
+    grid-column: 1;
+    margin: 0;
+  }
+  .footer__additional {
+    grid-row: 3;
+    grid-column: 1;
+    margin-left: 0;
+  }
+  .footer__categories {
+    grid-row: 4;
+    grid-column: 1;
+  }
+  .footer__legal {
+    grid-row: 5;
+    grid-column: 1;
+    margin-left: 0;
+  }
+  .footer__form {
+    width: 100%;
+  }
+  .footer__contact-details {
+    grid-row: 6;
+    grid-column: 1;
+  }
+  .footer__contact-form {
+    grid-row: 7;
+    grid-column: 1;
+  }
+  .footer__button {
+    margin-top: 0;
+  }
+  .footer__info {
+    grid-row: 5;
+    grid-column: 1;
+    margin-bottom: 15px;
+  }
+  .footer__info-wrapper {
+    display: grid;
+    margin-bottom: 0;
+    margin-top: 15px;
+  }
+  .footer-group {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+  }
+  .footer__input-group {
+    margin-bottom: 15px;
+  }
+  .footer__input-name {
+    grid-column: 1;
+  }
+
+  .button {
+    grid-row: 9;
+    grid-column: 1;
+  }
+
+  .bottom {
+    display: flex;
+    width: 289px;
+  }
+  .bottom-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 289px;
+  }
 }
 @media (max-width: 625px) {
   .logo {
@@ -2446,6 +2577,7 @@ template {
   .bottom {
     display: flex;
     width: 450px;
+    margin-top: 30px;
   }
   .bottom-wrapper {
     display: flex;
