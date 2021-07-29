@@ -81,6 +81,18 @@ a {
   text-decoration: none;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: #143861;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ff0000;
+  width: 2px;
+  border-radius: 9em;
+  box-shadow: inset 1px 1px 10px #f3faf7;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -850,6 +862,10 @@ template {
   grid-template-rows: 500px 500px;
   grid-gap: 30px;
 }
+.wrapper-block {
+  display: flex;
+  justify-content: space-between;
+}
 .wrapper__image {
   margin-right: 2px;
   margin-bottom: 8px;
@@ -881,6 +897,7 @@ template {
 }
 .wrapper__img {
   height: 500px;
+  object-fit: cover;
 }
 .wrapper-stars {
   display: flex;
@@ -912,6 +929,7 @@ template {
   font-size: 14px;
   line-height: 160%;
   max-height: 170px;
+  overflow: auto;
 }
 .wrapper__text {
   margin-top: 11px;
@@ -950,7 +968,7 @@ template {
 }
 .wrapper-price__button {
   font-family: "Nunito", sans-serif;
-  margin-left: 92px;
+  margin-right: 20px;
   padding: 10px 27px 10px 26px;
   background-color: #EC1F46;
   color: #ffffff;
@@ -1024,7 +1042,7 @@ template {
 }
 .mare-price__button {
   font-family: "Nunito", sans-serif;
-  margin-left: 89px;
+  margin-right: 20px;
   padding: 10px 27px;
   background-color: #EC1F46;
   color: #ffffff;
@@ -1105,13 +1123,17 @@ template {
 }
 .pack-price__button {
   font-family: "Nunito", sans-serif;
-  margin-left: 70px;
+  margin-right: 20px;
   padding: 10px 27px;
   background-color: #EC1F46;
   color: #ffffff;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
 }
 
 .newsletter {
