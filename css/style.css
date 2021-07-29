@@ -3086,7 +3086,6 @@ template {
 
   #bookingEmail-error {
     grid-column: 1;
-    grid-row: 6;
   }
 
   #bookingMessage-error {
