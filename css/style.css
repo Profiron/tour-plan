@@ -77,6 +77,10 @@ img {
   color: #BDBDBD;
 }
 
+a {
+  text-decoration: none;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1574,11 +1578,13 @@ template {
 }
 .send__sub {
   margin: 0;
+  margin-bottom: 50px;
 }
 .send-block {
   display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .send__button {
   background-color: #EC1F46;

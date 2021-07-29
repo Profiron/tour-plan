@@ -124,9 +124,7 @@
             <h1 class="send__title">Thank you very much for contacting Best Tour Plan for booking a room.</h1>
             <h4 class="send__sub">Our manager will call you back in 5&nbsp;minutes.</h4>
           </div>
-          <a href="index.html" class="send__link">
-            <button class="button send__button">Return to homepage</button>
-          </a>
+          <a href="index.html" class="button send__button send__link">Return to homepage </a>
         </div>
       </div>
     </section>
@@ -135,11 +133,11 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
-          <a href="#" class="footer__logo">
+          <a href="index.html" class="footer__logo">
             <img src="img/footer/vert-logo.svg" alt="Logo: Best Tour Plan" class="footer__logo-img" />
           </a>
           <div class="footer__list footer__categories">
-            <h3 class="footer__title">All Categories</h3>
+            <h3 class="footer__title footer__title-catigories">All Categories</h3>
             <ul class="footer__ul">
               <li class="footer__item">
                 <a href="#" class="footer__link">All Deals </a>
@@ -169,7 +167,7 @@
           </div>
           <!-- /.footer__list -->
           <div class="footer___list footer__additional">
-            <h3 class="footer__title">Additional Information</h3>
+            <h3 class="footer__title footer__title-additional">Additional&nbsp;Information</h3>
             <ul class="footer__ul">
               <li class="footer__item">
                 <a href="#" class="footer__link">About Us </a>
@@ -195,13 +193,13 @@
           <div class="footer__social-network">
             <h3 class="footer__title footer__title--inline">Social Network</h3>
             <div class="footer__social-links">
-              <a href="#" class="footer__link">
+              <a href="https://vk.com/profiron" target="_blank" class="footer__link">
                 <img src="img/footer/facebook.svg" alt="icon:facebook" class="footer__social-icon" />
               </a>
-              <a href="#" class="footer__link">
-                <img src="img/footer/youtube.svg" alt="icon: youtube" class="footer__social-icon" />
+              <a href="https://vk.com/profiron" target="_blank" class="footer__link">
+                <img src="img/footer/youtube.svg"  alt="icon: youtube" class="footer__social-icon" />
               </a>
-              <a href="#" class="footer__link">
+              <a href="https://vk.com/profiron" target="_blank" class="footer__link">
                 <img src="img/footer/instagram.svg " alt="icon: instagram" class="footer__social-icon" />
               </a>
             </div>
@@ -209,7 +207,7 @@
           </div>
           <!-- /.footer__social-network -->
           <div class="footer__list footer__legal">
-            <h3 class="footer__title">legal Information</h3>
+            <h3 class="footer__title footer__title-legal">legal Information</h3>
             <ul class="footer__ul">
               <li class="footer__item">
                 <a href="#" class="footer__link">Terms & Conditions</a>
@@ -255,9 +253,9 @@
                   <br />
                 </span>
               </li>
-              <li class="footer__item footer__item--mb-2">
-                <div class="footer__icon-wrapper">
-                  <img class="footer__icon" src="img/footer/email.svg" alt="icon: e-mail" />
+              <li class="footer__item footer__item--mb-3">
+                <div class="footer__icon-wrapper footer__wrappers">
+                  <img class="footer__icon footer__icons" src="img/footer/email.svg" alt="icon: e-mail" />
                 </div>
                 <a class="footer__details-link" href="mailto:cherly.lawson@example.com">cherly.lawson@example.com</a>
               </li>
@@ -265,11 +263,31 @@
           </div>
           <!-- /.footer-contact-details -->
           <div class="footer__contact-form">
-            <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
-            <form action="send.php" method="POST" class="footer__form">
-              <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" />
-              <input type="text" class="input footer__input" placeholder="Phone Number*" name="phone" />
-              <textarea class="message footer__message" placeholder="Message" name="message"></textarea>
+            <h3 class="footer__title footer__title--mb-4">Send us a message</h3>
+            <form action="send.php" method="POST" class="footer__form form">
+              <div class="footer-group">
+                <div class="footer__input-group">
+                  <input
+                    type="text"
+                    class="input footer__input footer__input-name"
+                    placeholder="Your Full Name*"
+                    name="name"
+                    required
+                    minlength="2"
+                  />
+                </div>
+                <div class="footer__input-group">
+                  <input
+                    type="tel"
+                    class="input footer__input footer__input-phone phone"
+                    placeholder="Phone Number*"
+                    name="phone"
+                    minlength="18"
+                    required
+                  />
+                </div>
+              </div>
+              <textarea class="message footer__message" placeholder="Message*" name="message" required></textarea>
               <div class="footer__info-wrapper">
                 <button class="button footer__button">Send</button>
                 <span class="footer__info">* Required Fields</span>
@@ -300,6 +318,11 @@
       </div>
       <!-- /.container -->
     </footer>
-
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
