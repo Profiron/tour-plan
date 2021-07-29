@@ -386,7 +386,7 @@
   .hotel
     &-right
       flex-direction: column
-      min-height: 450px
+      height: 450px
     &-slider
       height: 350px
   .booking
@@ -499,7 +499,7 @@
     &__contact
       &-details
         grid-row: 6
-        grid-column:1
+        grid-column: 1
       &-form
         grid-row: 7
         grid-column: 1
@@ -822,19 +822,188 @@
     &__input
       width: 293px
 @media (max-width: 360px)
+  .container
+    width: 280px
+  .breadcrumb
+    &-list
+      padding-bottom: 15px
+  .hotel
+    padding-top: 0
+    &-wrapper
+      justify-content: flex-start
+    &-info
+      &__name
+        margin-top: 10px
+      &__description
+        margin: 0
+        margin-bottom: 19px
+      &__offer
+        margin-right: 148px
+    &__slider
+      height: 179px
+    &-right
+      justify-content: flex-start
+      height: 400px
+  .stars
+    margin-top: 2px
+  .booking
+    margin-bottom: 20px
+  .map
+    height: 172px
+  .wrapper
+    &-haven
+      width: 280px
+  .mare
+    width: 280px
+    &-image
+      width: 280px
+  .pack
+    width: 280px
+    &-image
+      width: 280px
+  .newsletter
+    height: 320px
+    &-wrapper
+      position: absolute
+      left: 16px
+      bottom: 95px
+      width: 85%
+      justify-content: flex-start
+    &-title
+      font-style: normal
+      font-weight: 300
+      font-size: 20px
+      line-height: 30px
+      margin-bottom: 37px
+  .subscribe
+    &__input
+      padding-left: 20px
+      height: 55px
+      width: 280px
+    &__button
+      left: 215px
+      height: 55px
+  .reviews
+    padding-top: 40px
+    padding-bottom: 40px
+    &__title
+      margin-left: 13px
+    &-slider
+      &__item
+        padding-left: 28px
+        padding-right: 40px
+      &__button
+        &--next
+          margin-right: -80px
+  .activities
+    padding-top: 40px
+    padding-bottom: 40px
+    &__title
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 23px
+      margin-bottom: 35px
+    &-wrapper
+      display: grid
+      grid-template-columns: 280px
+    .card
+      &__one
+        grid-row: 1
+      &__two
+        grid-row: 3
+      &__three
+        grid-row: 2
+      &__four
+        grid-row: 4
+  .footer
+    padding-top: 67px
+    padding-bottom: 20px
+    &-wrapper
+      grid-gap: 18px
+    &__logo
+      &-img
+        height: 110px
+    &__social
+      &-network
+        flex-direction: column
+        align-items: flex-start
+        justify-content: space-between
+        height: 70px
+        grid-row: 2/4
+        grid-column: 1
+    &__title
+      margin-bottom: 7px
+      &-catigories
+        margin-bottom: 13px
+    &__additional
+      grid-row: 5
+      grid-column: 1
+      margin-top: 10px
+      margin-bottom: 10px
+    &__categories
+      grid-row: 6
+      grid-column: 1
+    &__legal
+      grid-row: 4
+      grid-column: 1
+    &__contact
+      &-details
+        width: 280px
+        grid-row: 7
+        grid-column: 1
+      &-form
+        width: 280px
+        grid-row: 8
+        grid-column: 1
+        margin-top: 35px
+    &__icon
+      margin-left: 6.3px
+      margin-right: 0
+      &-wrapper
+        margin-right: 12px
+    &__wrappers
+      width: 31px
+      margin: 0
+    &__icons
+      width: 20px
+      margin: 0
+    &__item--mb-2
+      margin-bottom: 23.7px
+    &__button
+      margin-top: 0
+    &__info
+      grid-row: 5
+      grid-column: 1
+      margin-bottom: 15px
+      &-wrapper
+        display: grid
+        margin-bottom: 0
+        margin-top: 15px
+    &-group
+      grid-template-columns: 1fr
+      grid-gap: 0
+    &__input
+      &-group
+        margin-bottom: 15px
+      &-name
+        grid-column: 1/3
+  .button
+    grid-row: 9
+    grid-column: 1
+  .bottom
+    display: flex
+    width: 289px
+    margin-top: 13px
+    &-wrapper
+      display: flex
+      flex-direction: column
+      max-width: 289px
+      align-items: flex-start
+    
   .modal
     &__dialog
       padding: 15px 20px
-  .footer
-    &__contact
-      &-form
-        width: 298px
-    &__bottom
-      margin-top: 30px
-  .bottom
-    margin-top: 30px
-    &-wrapper
-      align-items: flex-start
 @media (max-height: 360px)
   .modal
     &__dialog
