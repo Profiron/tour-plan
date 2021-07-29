@@ -2950,16 +2950,16 @@ template {
     display: grid;
     grid-template-columns: 280px;
   }
-  .activities .card__one {
+  .activities__one {
     grid-row: 1;
   }
-  .activities .card__two {
+  .activities__two {
     grid-row: 3;
   }
-  .activities .card__three {
+  .activities__three {
     grid-row: 2;
   }
-  .activities .card__four {
+  .activities__four {
     grid-row: 4;
   }
 
