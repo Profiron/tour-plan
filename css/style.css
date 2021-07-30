@@ -1981,7 +1981,7 @@ template {
   }
 
   .reviews {
-    padding-top: 16px;
+    padding-top: 43px;
   }
   .reviews__title {
     font-style: normal;
@@ -2063,6 +2063,7 @@ template {
 
   .footer {
     padding-top: 73px;
+    padding-bottom: 10px;
   }
   .footer__logo-img {
     width: 104px;
@@ -2071,6 +2072,9 @@ template {
   .footer__social-network {
     margin-top: 20px;
     margin-left: 15px;
+  }
+  .footer__social-links {
+    height: 40px;
   }
   .footer__title {
     line-height: 33px;
@@ -2110,6 +2114,9 @@ template {
   }
   .footer__input-group {
     flex-basis: 100%;
+  }
+  .footer__bottom {
+    margin-top: 43px;
   }
 
   .send-success {
@@ -2940,7 +2947,7 @@ template {
     font-weight: 300;
     font-size: 20px;
     line-height: 30px;
-    margin-bottom: 37px;
+    margin-bottom: 28.2px;
   }
 
   .subscribe__input {
@@ -2959,9 +2966,11 @@ template {
   }
   .reviews__title {
     margin-left: 13px;
+    margin-bottom: 40px;
   }
   .reviews-slider__text {
     text-align: left;
+    width: 219px;
   }
   .reviews-slider__item {
     padding-left: 28px;
@@ -3017,6 +3026,9 @@ template {
     grid-row: 2/4;
     grid-column: 1;
   }
+  .footer__social-links {
+    height: 18px;
+  }
   .footer__title {
     margin-bottom: 7px;
   }
@@ -3038,6 +3050,7 @@ template {
     grid-column: 1;
   }
   .footer__contact-details {
+    margin-top: 17.8px;
     width: 280px;
     grid-row: 7;
     grid-column: 1;
