@@ -26,6 +26,10 @@
     width: 350px
   .palace
     grid-row: 2/3
+  .reviews
+    &__title
+      margin-left: 0
+      text-align: center
   .footer
     &__input
       &-group
@@ -108,6 +112,7 @@
       grid-column: span 2
     &__legal
       grid-column: span 2
+      margin-left: 55px
     &__additional
       grid-column: span 2
     &__contact
@@ -202,6 +207,8 @@
       font-size: 30px
       line-height: 38px
       margin-bottom: 50px
+      margin-left: 0
+      text-align: center
     &-slider
       &__avatar
         margin: 0
@@ -214,11 +221,13 @@
       &__button
         top: 30px
         &--prev
-          left: 50%
+          top: 45.8%
+          right: 17%
           margin-left: -100px
           transform: translate(-50%,0)
         &--next
-          right: 50%
+          top: 45.8%
+          right: 17%
           margin-right: -100px
           transform: translate(50%,0)
   .activities
@@ -306,6 +315,8 @@
   body
     padding-top: 78px
   .navbar
+    &__search
+      margin: 0
     &-top
       justify-content: space-between
     &--fixed
@@ -334,6 +345,8 @@
       &--visible
         display: block
         overflow: scroll
+        height: 100%
+        width: 100%
     &-menu
       flex-direction: column
       &__item
@@ -834,7 +847,11 @@
       &__item
         margin: 0
       &__items
-        margin-top: 17px
+        margin-top: 56px
+    &__search
+      margin: 0
+      position: absolute
+      right: 10.8%
   .user
     &__name
       margin-bottom: 10px
@@ -872,12 +889,21 @@
   .wrapper
     &-haven
       width: 280px
+    &-price
+      &__button
+        margin-left: 0
   .mare
     width: 280px
+    &-price
+      &__button
+        margin-left: 0
     &-image
       width: 280px
   .pack
     width: 280px
+    &-price
+      &__button
+        margin-left: 0
     &-image
       width: 280px
   .newsletter
@@ -908,6 +934,8 @@
     &__title
       margin-left: 13px
     &-slider
+      &__text
+        text-align: left
       &__item
         padding-left: 28px
         padding-right: 40px
@@ -1018,7 +1046,6 @@
       flex-direction: column
       max-width: 289px
       align-items: flex-start
-    
   .modal
     &__dialog
       padding: 15px 20px
